@@ -1,0 +1,164 @@
+:root {
+  /* Основные фиолетовые цвета */
+  --ifm-color-primary: #6e3cb4;
+  --ifm-color-primary-dark: #6336a2;
+  --ifm-color-primary-darker: #5d3399;
+  --ifm-color-primary-darkest: #4d2a7e;
+  --ifm-color-primary-light: #7c45c3;
+  --ifm-color-primary-lighter: #834dc9;
+  --ifm-color-primary-lightest: #9668d4;
+
+  /* Цвета для блоков кода */
+  --code-text-color: #393a34;          /* Основной текст */
+  --code-keyword-color: #d946ef;       /* Ключевые слова (например, `if`, `return`) */
+  --code-string-color: #814aed;        /* Строки */
+  --code-comment-color: #9ca3af;       /* Комментарии */
+
+
+  /* Дополнительные настройки */
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+/* Футер */
+.footer {
+  --ifm-footer-background-color: #2a1b45;
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-link-color: #d0bcf2;
+  --ifm-footer-title-color: #fff;
+}
+
+/* Навбар */
+.navbar {
+  --ifm-navbar-background-color: #2a1b45;
+  --ifm-navbar-link-color: #e2d6f8;
+  --ifm-navbar-link-hover-color: #fff;
+  --ifm-menu-color: #e2d6f8;
+}
+
+/* Боковое меню */
+.menu {
+  --ifm-menu-color-background-active: #f3eefe;
+}
+
+/* Кнопки */
+.button {
+  --ifm-button-border-width: 0;
+}
+
+.button--primary {
+  --ifm-button-background-color: var(--ifm-color-primary);
+  --ifm-button-border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  --ifm-button-background-color: var(--ifm-color-primary-light);
+  --ifm-button-border-color: var(--ifm-color-primary-light);
+}
+
+/* Темная тема */
+[data-theme='dark'] {
+  --ifm-color-primary: #9d6ff3;
+  --ifm-color-primary-dark: #8c5aef;
+  --ifm-color-primary-darker: #814aed;
+  --ifm-color-primary-darkest: #6825e8;
+  --ifm-color-primary-light: #ae84f7;
+  --ifm-color-primary-lighter: #b994f8;
+  --ifm-color-primary-lightest: #d5b9fb;
+
+/* Цвета для блоков кода */
+  --code-text-color: #9d6ff3;
+  --code-keyword-color: #c792ea;
+  --code-string-color: #814aed;
+  --code-comment-color: #9d6ff3;
+
+  --ifm-background-color: #1e1435;
+  --ifm-navbar-background-color: #1a1030;
+  --ifm-footer-background-color: #1a1030;
+}
+
+/* Кастомные стили для элементов */
+.markdown h1 {
+  color: var(--ifm-color-primary);
+}
+
+.markdown h2 {
+  color: var(--ifm-color-primary-dark);
+  border-bottom: 1px solid var(--ifm-color-primary-lightest);
+}
+
+/* Ховер-эффекты для ссылок */
+a:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+/* Кастомные блоки */
+.theme-doc-sidebar-container {
+  background: #f9f5ff;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: #1a1030;
+}
+
+/* Код-блоки */
+.prism-code {
+  background: #f9f5ff !important;
+  background-color: var(--code-block-bg-light) !important;
+  color: var(--code-text-light) !important;
+}
+
+[data-theme='dark'] .prism-code {
+  background: #1a1030 !important;
+  background-color: var(--code-block-bg-dark) !important;
+  color: var(--code-text-dark) !important;
+} 
+
+/* Стили для подсветки синтаксиса */
+.prism-code {
+  color: var(--code-text-color) !important;
+}
+
+.token.keyword {
+  color: var(--code-keyword-color) !important;
+}
+
+.token.string {
+  color: var(--code-string-color) !important;
+}
+
+.token.comment {
+  color: var(--code-comment-color) !important;
+}
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+} */
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* [data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
